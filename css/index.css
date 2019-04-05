@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Russo One', 'Ubuntu';
   color: #23293B;
 }
 h2 {
@@ -170,7 +170,7 @@ p {
   width: 100%;
   height: 100px;
   background: #F6F6F6;
-  opacity: 0.7;
+  opacity: 0.75;
   position: fixed;
 }
 .main-navigation .nav-container {
@@ -214,8 +214,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro {
-  font-family: 'Russo One', 'Ubuntu', 'sans-serif';
+.home .intro .header-img {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -259,11 +263,42 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .btn-container .btn {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  background-color: #22283A;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn-container .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn-container .btn:hover {
+  background: white;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn-container {
+    width: 100%;
+    order: 5;
+  }
+}
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
