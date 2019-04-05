@@ -1,18 +1,9 @@
 // Home Content
 
+
 .home {
 
   .intro {
-
-
-    .header-img {
-      width: 100%;
-      height: 100px;
-      margin-top: 100px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
 
     h2 {
       padding: 15px;
@@ -28,42 +19,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 2px solid hotpink;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }    
-      .blast {
-         width: 28%;
-         margin: 20px 2.5%;
-        border-radius: 20px;
-      height: 100%;
-      @media @phone {
-        border: 1px solid hotpink;
-        order: 1;
-      }
-    .sky {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-      @media @phone {
-        display: none;
-      }
-    .launch {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-      @media @phone {
-        display: none;
-      }
-    }
-    }
-    }
     }
   }
 
@@ -84,23 +45,10 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    flex-wrap: wrap;
-    border: 2px solid goldenrod;
-    @media @phone {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
+    justify-content: center;
 
     .walk-text {
       width: 50%;
-      margin-left: 5%;
-      order: 1;
-      @media @phone {
-        width: 90%;
-        order: 2;
-      }
-
 
       h3 {
         margin-bottom: 10px;
@@ -110,35 +58,22 @@
         margin-bottom: 26px;
       }
 
-
-    .btn {
-      .button-creator(200px, 45px, @btn-bg-color, white, 1.8rem);
-      padding: 20px;
-      margin-top: 20px;
-      margin-left: 5%;
-      order: 5;
-      @media @phone {
-        border: 1px solid red;
-      width: 100%;
-      order: 5;
-          }
-        }
-
+      .btn {
+        .button-creator(150px, 45px, @btn-bg-color, white, 1.8rem);
+        padding: 20px; 
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-
-      }
+      
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        order: 2;
-        @media @phone {
-          order: 1;
       }
     }
   }
-  // home
+}// home
+
