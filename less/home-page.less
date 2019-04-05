@@ -5,6 +5,15 @@
 
   .intro {
 
+    .header-img {
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    
+    }
+
     h2 {
       padding: 15px;
     }
@@ -46,9 +55,11 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    border: 2px solid darkorange;
 
     .walk-text {
       width: 50%;
+      border: 3px solid hotpink;
 
       h3 {
         margin-bottom: 10px;
@@ -67,13 +78,16 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        order: 1;
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        }
       }
     }
   }
-}// home
 
+}//home
