@@ -50,14 +50,22 @@
   }
 
   .walk {
+    width: 100%;
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    border: 2px solid goldenrod;
+    @media @phone {
+      display: flex;
+      justify-content: center;
+    }
 
     .walk-text {
       width: 50%;
+      margin-left: 5%;
+      order: 2;
 
       h3 {
         margin-bottom: 10px;
@@ -68,6 +76,7 @@
       }
 
       .btn-container {
+        order: 5;
         .btn {
           .button-creator(200px, 45px, @btn-bg-color, white, 1.8rem);
           padding: 20px;
@@ -82,6 +91,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      order: 1;
       
       img {
         width: 100%;
