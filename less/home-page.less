@@ -35,10 +35,11 @@
       border-radius: 20px;
       height: 100%;
     }
-    @media @phone {
-      display: flex;
-      flex-direction: column;
-    }
+
+      .sky {
+        border: 3px solid darkorange;
+        opacity: 0;
+      }
   }
 
   .visit-planets {
@@ -92,14 +93,13 @@
       margin-left: 4%;
       @media @phone {
         order: 1;
-        width: 100%;
+        border: 2px solid green;
       }
 
       
       img {
         width: 100%;
         border-radius: 10px;
-        border: 2px solid green;
         }
       }
     }
