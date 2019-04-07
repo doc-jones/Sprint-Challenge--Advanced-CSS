@@ -1,0 +1,17 @@
+// Sprint 02 Answers to Study Questions
+
+
+What is the difference between an adaptive website and a fully responsive website?
+Adaptive design keeps the page design constant while adjusting to the size of the browser. Responsive design changes the design depending upon the size of the view. For example, when the content of a complex site like ESPN is reduced to a 500px mobile phone view the site adjusts the layout of content to a single column versus the multi-column presentation of the full web site.
+
+Describe what it means to be mobile first vs desktop first.
+In mobile first design, a developer will build the presentation for a mobile screen first and make use of media queries and min-width properties to adjust the mobile site to scale up for the web. This is versus web first which crafts the design for the web and uses media queries and max-width properties to scale down the content for presentation on a smaller screen.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+It converts the browser standardish designation of default font size from 16px to 10px making it easier for us to calculate ems and rems.
+
+How would you describe preprocessing to someone new to CSS?
+Preprocessing allows us to simplify and organize our css code.  It provides a compiler which allows us to build using multiple files and work on small chunks of code but to deliver a single css (styling) file.
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+@imports because it just makes simplifying and organizing code so much easier. nesting as we practiced in preprocessing I was hard because of keeping track of all the curly brackets. 
